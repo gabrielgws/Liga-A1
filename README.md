@@ -19,27 +19,41 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-$ git clone https://github.com/gabrielgws/mitrione-luckezzi-advogados.git
-$ cd mitrione-luckezzi-advogados
+$ git clone https://github.com/gabrielgws/Liga-A1.git
+$ cd Liga-A1
 ```
 
 Para iniciá-lo, siga os passos abaixo:
 ```bash
 # Instalar as dependências
-$ yarn
+$ composer install
 
-# Iniciar o projeto
-$ yarn dev
+# Configurar o arquivo .env
+$ cp .env.example .env
+
+# Gere uma chave da aplicação
+$ php artisan key:generate
+
+# Execute as migrações
+$ php artisan migrate
+
+# Iniciar o servidor de Desenvolvimento
+$ php artisan serve
 ```
-O app estará disponível no seu browser pelo endereço http://localhost:3000.
+O app estará disponível no seu browser pelo endereço http://127.0.0.1:8000/.
 
 ## 💻 Projeto
 
-Desenvolvimento de uma Landing page para um advogado. Serviço Freelancer.
+Desenvolvimento de uma plataforma de uma liga, de forma gerenciável:
+- Cadastro de novos usuários;
+- Adicionar ou remover usuário a liga;
+- Gerenciar regras da liga: Adicionar, remover ou editar;
+- Aplicar regras a cada player, podendo adicionar ou remover regra;
+- Página de usuário aonde poderá atualizar suas informações.
 
 ## 🔖 Layout
 
-Direitos gabrielgws.com
+Direitos gabrielgws.dev
 
 ## 📝 License
 
