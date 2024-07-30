@@ -1,3 +1,4 @@
+@if(Auth::check()) <!-- Verifique se o usuário está autenticado -->
 <section class="fixed bottom-0 w-full container text-center bg-black z-10">
     <div class="mx-auto flex justify-between py-5 px-5 max-w-[500px]">
         <!-- Início -->
@@ -38,3 +39,4 @@
         </div>
     </div>
 </section>
+@endif <!-- Fecha a verificação de autenticação -->
